@@ -1,0 +1,39 @@
+<nav class="nav-bottom">
+  <a class="nav-item-bt" href="https://sanphukhoamauhong.com/">
+    <img alt="Home" src="http://sanphukhoamauhong.com/wp-content/uploads/2024/07/home-3.png" />
+    <span>Trang Chủ</span>
+  </a>
+  <a class="nav-item-bt" href="https://sanphukhoamauhong.com/cong-cu-tinh-suc-khoe/">
+    <img alt="Post" src="http://sanphukhoamauhong.com/wp-content/uploads/2024/10/spreadsheet-app.png" />
+    <span>Công Cụ Tính</span>
+  </a>
+  <a class="nav-item-bt" href="https://sanphukhoamauhong.com/bang-gia/">
+    <img alt="Booking" src="http://sanphukhoamauhong.com/wp-content/uploads/2024/07/check-mark.png" />
+    <span>Bảng Giá</span>
+  </a>
+  <a class="nav-item-bt" href="https://maps.app.goo.gl/9hJRy7HFoo3Sx68r8">
+    <img alt="Address" src="http://sanphukhoamauhong.com/wp-content/uploads/2024/07/pin.png" />
+    <span>Địa Chỉ</span>
+  </a>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Lấy URL hiện tại
+    var currentUrl = window.location.href;
+    
+    // Lấy tất cả các mục điều hướng
+    var navItems = document.querySelectorAll('.nav-item-bt');
+    
+    navItems.forEach(function(item) {
+      // Loại bỏ lớp active từ tất cả các mục điều hướng
+      item.classList.remove('active');
+      
+      // Kiểm tra nếu href của mục điều hướng khớp với URL hiện tại
+      if (currentUrl === item.href) {
+        // Thêm lớp active cho mục đó
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
